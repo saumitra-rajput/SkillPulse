@@ -1,9 +1,19 @@
 name: CI
 
 
-on:
-  push:
-    branches: [inspect]
+#on:
+#  push:
+#    branches: [inspect]
+
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target branch'
+        required: true
+        default: 'inspect'
+        type: choice
+        options:
+          - inspect
 
 permissions:
   contents: read
