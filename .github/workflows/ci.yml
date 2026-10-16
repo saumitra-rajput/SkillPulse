@@ -11,9 +11,7 @@ on:
         description: 'Target branch'
         required: true
         default: 'inspect'
-        type: choice
-        options:
-          - inspect
+        type: string
 
 permissions:
   contents: read
