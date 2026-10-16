@@ -8,7 +8,10 @@ on:
         description: 'Target branch'
         required: true
         default: 'inspect'
-        type: string 
+        type: choice
+        options:
+          - inspect
+          - main 
 
 permissions:
   contents: read
